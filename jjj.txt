@@ -1,6 +1,4 @@
-<<< HEAD
-f===
-opjfoidsjf
+ogjopjfoidsjf
 <<<<<<< HEAD
 g
 asdf
