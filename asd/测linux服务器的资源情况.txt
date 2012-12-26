@@ -1,0 +1,98 @@
+LoadRunner压力测试时监控服务器Linux的资源情况
+
+
+
+ 在进行负载测试（Load Test）是要监控服务器的CPU、内存、磁盘、网络的情况。如何监控Ubuntu的情况呢。
+
+    1、安装rstatd，sudo apt-get install rstatd，如果无法apt安装，可以下载安装。
+
+    2、启动rpc.rstatd
+
+   查看是否正常启动，用如下命令
+   rpcinfo -p
+
+   [root@localhost ~]# rpcinfo -p
+   program vers proto   port
+    100000    2   tcp    111  portmapper
+    100000    2   udp    111  portmapper
+    100024    1   udp    676  status
+    100024    1   tcp    679  status
+    100001    3   udp    691  rstatd
+    100001    2   udp    691  rstatd
+    100001    1   udp    691  rstatd
+
+    3、在LoadRunner Controller的run界面中，添加System Resource Graphs下的Unix Resource，在Unix Resource图上右键Add Measurements，然后点击Add，填写ip如192.168.1.99，默认只有三个指标，在下面的Add中可以添加其他指标。
+
+    4、下面说一下各种指标的情况
+
+ 
+
+CPU指标
+
+    Average load
+    上一分钟同时处于“就绪”状态的平均进程数，< CPU个数 * 核心数 * 0.7
+    CPU utilization
+    CPU 的使用时间百分比，如果在75%以上，则可以考虑换CPU了
+    Swap-in rate
+    正在交换的进程数 
+    Swap-out rate
+    正在交换的进程数
+    Context switches rate
+    每秒钟在进程或线程之间的切换次数
+    System mode CPU utilization
+    在系统模式下使用 CPU 的时间百分比
+    User mode CPU utilization
+    在用户模式下使用 CPU 的时间百分比
+    Interrupt rate 
+    每秒内的设备中断数 
+
+内存
+
+    Page-in rate 
+    每秒钟读入到物理内存中的页数
+    Page-out rate 
+    每秒钟写入页面文件和从物理内存中删除的页数 
+    Paging rate 
+    每秒钟读入物理内存或写入页面文件的页数，如果持续在几百，可能要加大内存了
+
+LoadRunner采集的数据中，内存的使用情况是没有的，可以装sar，然后用sar来观察：
+可以使用该命令sar -n DEV -u -r 3 120 > perform.log
+这个命令3秒采样一次，共采样120次 360秒＝6分钟，可以根据自己的需要调整 3 和 120 这两个值。perform.log是保存的文件名
+
+ 
+
+磁盘
+
+    Collision rate
+    每秒钟在以太网上检测到的冲突数
+    Disk rate 
+    磁盘传输速率
+
+网络
+
+    Incoming packets error rate 
+    接收以太网数据包时每秒钟接收到的错误数 
+    Incoming packets rate 
+    每秒钟传入的以太网数据包数 
+    Outgoing packets errors rate 
+    发送以太网数据包时每秒钟发送的错误数 
+    Outgoing packets rate 
+    每秒钟传出的以太网数据包数
+
+pps是
+
+以太网传输最小包长是64字节。包转发线速的衡量标准是以单位时间内发送64byte的数据包（最小包）的个数作为计算基准的。
+
+对于千兆以太网来说，计算方法如下：
+1000Mbps/((64B+8B+12B)×8bit)=1.488095pps
+说明：当以太网帧为64Byte时，需考虑8Byte的前导符和12Byte的帧间隙的固定开销。
+在以太网中，每个帧头都要加上了8个字节的前导符，前导符的作用在于告诉监听设备数据将要到来。然后，以太网中的每个帧之间都要有帧间隙，即每发完一个帧之后要等待一段时间再发另外一个帧，在以太网标准中规定最小是12个字节，然而帧间隙在实际应用中有可能会比12个字节要大，在这里我用了最小值。每个帧都要有20个字节的固定开销。（另外这20字节的信息是不能通过抓包软件抓下来的）
+因此一个全双工线速的千兆以太网端口在转发64Byte包时的包转发率为1.488Mpps。
+
+以下是常用以太网端口的包转发率：
+
+1、万兆以太网：14.88Mpps
+2、千兆以太网：1.488Mpps
+3、百兆以太网：0.1488Mpps
+
+4、十兆以太网：0.01488Mpps(14.88Kpps)

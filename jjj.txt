@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 asdf
+=======
+
+idjgopdfjkgop
+gjfdopgfpgbmopgmborpgbmpr
+mfp
+pgkog
+t
+pfsf
+:wq
+
+>>>>>>> 7ec863e022582cc205e18a79389429ea27a99c33
