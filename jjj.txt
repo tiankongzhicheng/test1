@@ -1,20 +1,2 @@
-ogjopjfoidsjf
-<<<<<<< HEAD
-g
-asdf
-dhfosidh
-=======
-<<<<<<< HEAD
-asdf
-=======
 
->>>>>>> 48653d616ad160726f954b44ea0d7c8fae5fc173
-idjgopdfjkgop
-gjfdopgfpgbmopgmborpgbmpr
-mfp
-pgkog
-t
-pfsf
-:wq
-
->>>>>>> 7ec863e022582cc205e18a79389429ea27a99c33
+sifewpoifjewpofj
