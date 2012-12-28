@@ -1,0 +1,67 @@
+8
+
+dir
+28
+http://192.168.1.2:8080/svn/tractest
+http://192.168.1.2:8080/svn/tractest
+
+
+
+2012-04-24T00:53:18.937500Z
+28
+jianling.cheng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+97d5266e-60a2-9940-bab1-09c7e3f3e764
+
+test
+dir
+
+新建 文本文档 (2).txt
+file
+
+
+
+
+2012-12-28T05:35:57.000000Z
+e4da05375c3866a5cc02aabee5625a67
+2012-04-23T06:41:40.796875Z
+20
+nan.li
+
+新建 文本文档.txt
+file
+
+
+
+
+2012-12-28T05:35:57.000000Z
+3f1b32929a3a08033e43b5503b54bf5b
+2012-04-23T07:23:07.718750Z
+26
+lingling.liu
+
+新建 文本文档5.txt
+file
+
+
+
+
+2012-12-28T05:35:57.000000Z
+cb262c9e01c529b7790786a7c80a5c11
+2012-04-23T08:26:43.796875Z
+27
+lingling.liu
+

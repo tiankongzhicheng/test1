@@ -1,0 +1,40 @@
+8
+
+dir
+28
+http://192.168.1.2:8080/svn/tractest/test
+http://192.168.1.2:8080/svn/tractest
+
+
+
+2012-03-07T08:17:30.218750Z
+15
+nan.li
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+97d5266e-60a2-9940-bab1-09c7e3f3e764
+
+a.txt
+file
+
+
+
+
+2012-12-28T05:35:57.000000Z
+e03c11bfb099576ec8126a95ae95eb9a
+2012-03-07T08:17:30.218750Z
+15
+nan.li
+

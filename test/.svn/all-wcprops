@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/svn/tractest/!svn/ver/28/
+END
+新建 文本文档5.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/tractest/!svn/ver/27/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A35.txt
+END
+新建 文本文档 (2).txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/tractest/!svn/ver/20/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3%20(2).txt
+END
+新建 文本文档.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/tractest/!svn/ver/26/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3.txt
+END
