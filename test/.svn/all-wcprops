@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 26
-/svn/tractest/!svn/ver/31/
+/svn/tractest/!svn/ver/32/
 END
 新建 文本文档5.txt
 K 25
@@ -31,5 +31,5 @@ lyy.txt
 K 25
 svn:wc:ra_dav:version-url
 V 33
-/svn/tractest/!svn/ver/31/lyy.txt
+/svn/tractest/!svn/ver/32/lyy.txt
 END
