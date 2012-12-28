@@ -1,14 +1,14 @@
 8
 
 dir
-38
+39
 http://192.168.1.2:8080/svn/tractest
 http://192.168.1.2:8080/svn/tractest
 
 
 
-2012-12-28T07:12:27.328125Z
-38
+2012-12-28T07:45:04.656250Z
+39
 yanyan.liu
 
 
@@ -36,18 +36,6 @@ file
 fb72617d932d14670f76cae5cb747c24
 2012-12-28T06:19:21.000000Z
 34
-yanyan.liu
-
-shudfh.txt
-file
-
-
-
-
-2012-12-28T06:39:33.000000Z
-ec02c59dee6faaca3189bace969c22d3
-2012-12-28T06:06:46.609375Z
-30
 yanyan.liu
 
 test
