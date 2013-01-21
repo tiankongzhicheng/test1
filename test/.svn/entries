@@ -1,14 +1,14 @@
 8
 
 dir
-41
+65
 http://192.168.1.2:8080/svn/tractest
 http://192.168.1.2:8080/svn/tractest
 
 
 
-2012-12-28T09:57:33.843750Z
-41
+2013-01-21T03:04:20.781250Z
+65
 yanyan.liu
 
 
@@ -26,53 +26,17 @@ svn:special svn:externals svn:needs-lock
 
 97d5266e-60a2-9940-bab1-09c7e3f3e764
 
-lyy.txt
+aaa.txt
 file
 
 
 
 
-2012-12-28T07:41:49.000000Z
-9bd3f49dde0f5039869d8d51d878d94c
-2012-12-28T07:51:00.515625Z
-40
+2013-01-21T03:04:01.000000Z
+2e07d5525c9da85e76ee6840d1197106
+2013-01-21T03:02:57.109375Z
+64
 yanyan.liu
-
-test
-dir
-
-test.doc
-file
-
-
-
-
-2012-12-28T06:39:33.000000Z
-1a30f56a2d73ca6f06a50f7ade5f251d
-2012-12-28T06:24:02.859375Z
-36
-yanyan.liu
-has-props
-
-test1.txt
-file
-
-
-
-
-
-fe1de8498bf810deee82222de99896d7
-2012-12-28T09:57:33.843750Z
-41
-yanyan.liu
-
-
-
-
-
-test1.txt.r40
-test1.txt.r41
-test1.txt.mine
 
 test2.txt
 file
@@ -80,9 +44,33 @@ file
 
 
 
-2012-12-28T07:03:09.000000Z
+2013-01-21T02:55:56.000000Z
 bf5f5cb225e792707776f14538003cfd
 2012-12-28T07:12:27.328125Z
 38
+yanyan.liu
+
+test3.txt
+file
+
+
+
+
+2013-01-21T02:55:56.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2012-12-31T02:22:10.875000Z
+53
+yanyan.liu
+
+test4.txt
+file
+
+
+
+
+2013-01-21T03:05:23.000000Z
+eb8829ff9d8ba6128c35c181e089f3ef
+2013-01-21T03:04:20.781250Z
+65
 yanyan.liu
 

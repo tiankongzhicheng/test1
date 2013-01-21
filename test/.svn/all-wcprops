@@ -1,13 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 26
-/svn/tractest/!svn/ver/41/
-END
-test1.txt
-K 25
-svn:wc:ra_dav:version-url
-V 35
-/svn/tractest/!svn/ver/41/test1.txt
+/svn/tractest/!svn/ver/65/
 END
 test2.txt
 K 25
@@ -15,15 +9,21 @@ svn:wc:ra_dav:version-url
 V 35
 /svn/tractest/!svn/ver/38/test2.txt
 END
-test.doc
-K 25
-svn:wc:ra_dav:version-url
-V 34
-/svn/tractest/!svn/ver/36/test.doc
-END
-lyy.txt
+aaa.txt
 K 25
 svn:wc:ra_dav:version-url
 V 33
-/svn/tractest/!svn/ver/40/lyy.txt
+/svn/tractest/!svn/ver/64/aaa.txt
+END
+test3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/tractest/!svn/ver/53/test3.txt
+END
+test4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/tractest/!svn/ver/65/test4.txt
 END
